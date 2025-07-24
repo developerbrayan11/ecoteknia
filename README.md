@@ -4,7 +4,7 @@
 
 ---
 
-![Ecoteknia Banner](https://i.imgur.com/VEhZH2z.png) <!-- Puedes cambiar esta imagen por una propia o eliminarla si no tienes -->
+![Ecoteknia Banner](./logo.jpg)
 
 ## 🚀 Descripción del Proyecto
 
