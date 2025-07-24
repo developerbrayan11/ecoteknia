@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-c3-devkitm-1",
+      "id": "esp",
+      "top": 124.5,
+      "left": 101.82,
+      "rotate": 90,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -36.9,
+      "left": -138.5,
+      "attrs": { "distance": "353" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic2",
+      "top": -36.9,
+      "left": 82.3,
+      "attrs": { "distance": "60" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic3",
+      "top": -36.9,
+      "left": 293.5,
+      "attrs": { "distance": "162" }
+    },
+    {
+      "type": "wokwi-gas-sensor",
+      "id": "gas1",
+      "top": 421,
+      "left": -120.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gas-sensor",
+      "id": "gas2",
+      "top": 421,
+      "left": 80.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gas-sensor",
+      "id": "gas3",
+      "top": 411.4,
+      "left": 311.3,
+      "rotate": 270,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ultrasonic1:VCC", "esp:5V", "red", [ "v48", "h38.4" ] ],
+    [ "ultrasonic2:VCC", "esp:5V", "red", [ "v38.4", "h-144" ] ],
+    [ "ultrasonic3:VCC", "esp:5V", "red", [ "v48", "h-364.8" ] ],
+    [ "ultrasonic1:GND", "esp:GND.1", "black", [ "v9.6", "h94.8" ] ],
+    [ "ultrasonic2:GND", "esp:GND.1", "black", [ "v19.2", "h-135.6" ] ],
+    [ "ultrasonic3:GND", "esp:GND.1", "black", [ "v19.2", "h-346.8" ] ],
+    [ "ultrasonic1:TRIG", "esp:2", "green", [ "v230.4", "h239.6", "v-126.72" ] ],
+    [ "ultrasonic1:ECHO", "esp:4", "green", [ "v278.4", "h47.2" ] ],
+    [ "ultrasonic2:TRIG", "esp:16", "green", [ "v67.2", "h66.8", "v201.6", "h-124.8" ] ],
+    [ "ultrasonic2:ECHO", "esp:5", "green", [ "v57.6", "h104.8", "v182.4", "h-192" ] ],
+    [ "ultrasonic1:VCC", "esp:5V.2", "red", [ "v19.2", "h153.72" ] ],
+    [ "ultrasonic2:VCC", "esp:5V.2", "red", [ "v67.2", "h-57.6", "v36.48" ] ],
+    [ "ultrasonic3:VCC", "esp:5V.2", "red", [ "v76.8", "h-259.2", "v26.88" ] ],
+    [ "gas1:AOUT", "esp:0", "green", [ "v-230.4", "h201.72" ] ],
+    [ "gas2:AOUT", "esp:1", "green", [ "v-115.2", "h-9.48" ] ],
+    [ "gas3:AOUT", "esp:3", "green", [ "v0" ] ],
+    [ "gas1:VCC", "esp:3V3.1", "red", [ "v-240", "h239.22" ] ],
+    [ "gas2:VCC", "esp:3V3.1", "red", [ "v-230.4", "h37.62" ] ],
+    [ "gas3:VCC", "esp:3V3.1", "red", [ "v-220.8", "h-192.78" ] ],
+    [ "gas1:GND", "esp:GND.6", "black", [ "v0" ] ],
+    [ "gas2:GND", "esp:GND.6", "black", [ "v0" ] ],
+    [ "gas3:GND", "esp:GND.6", "black", [ "v0" ] ],
+    [ "esp:10", "ultrasonic2:TRIG", "green", [ "v0" ] ],
+    [ "ultrasonic3:TRIG", "esp:8", "green", [ "v211.2", "h-211.48" ] ],
+    [ "ultrasonic3:ECHO", "esp:9", "green", [ "v230.4", "h-211.88" ] ]
+  ],
+  "dependencies": {}
+}
