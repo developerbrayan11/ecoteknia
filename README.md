@@ -27,9 +27,10 @@ A través de dispositivos IoT estratégicamente ubicados y conectados a una plat
 
 - **IoT (LoRa / WiFi / MQTT)**
 - **Arduino / ESP32**
+- **Sensores / Ultrasonido y MQ135**
 - **Python para procesamiento de datos**
-- **Node-RED para flujo de eventos**
-- **Firebase / MongoDB para almacenamiento**
+- **Arduino Aplicación**
+- **Wokwi**
 - **Mapas interactivos para geolocalización**
 
 ---
@@ -37,14 +38,6 @@ A través de dispositivos IoT estratégicamente ubicados y conectados a una plat
 ## 🌍 Impacto
 
 Con Ecoteknia se busca reducir la contaminación, mejorar la calidad de vida de los habitantes de Zipaquirá y fortalecer los sistemas de alerta temprana ante desbordamientos de basura, contribuyendo al **ODS 11: Ciudades y Comunidades Sostenibles**.
-
----
-
-## 📸 Capturas
-
-<!-- Puedes reemplazar estos enlaces por imágenes de tu prototipo o plataforma -->
-![Dashboard](https://i.imgur.com/XjT83kJ.png)
-![Mapa de Alertas](https://i.imgur.com/fGGEkIN.png)
 
 ---
 
@@ -73,10 +66,7 @@ Por favor, abre un `issue` o realiza un `pull request` con tus aportes.
 
 ## 📫 Contacto
 
-👤 **Desarrollador(a): [Tu Nombre]**  
-📧 [Tu Email]  
-🔗 [Tu LinkedIn]  
-🐦 [Tu Twitter]
+👤 **Desarrolladores: Angie Blanco - Edwin Acosta - Brayan Bernal**  
 
 ---
 
@@ -88,7 +78,7 @@ Este proyecto forma parte del trabajo académico en el área de IoT y sostenibil
 
 ## ⚡ Licencia
 
-Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la licencia. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 
